@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" ng-app="website">
+<link rel="icon" href="img/favicon.png" />
+<head>
+<title>Estaciona Simples</title>
+<meta property="og:title" content="teixeiraeadvogados.com - Teixeira, Direito do Consumidor, Família, Desaposentação e Sucessões">
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://www.teixeiraeadvogados.com/">
+<meta property="og:image" content="http://teixeiraeadvogados.com/img/sprite.png">
+<meta property="og:site_name" content="teixeiraeadvogados.com">
+<meta property="og:description" content="Advogado Teixeira Rio de Janeiro. Direito do consumidor, família, desaposentação e sucessões.">
+<meta name="description" content="Teixeira e Advogados, Rio de Janeiro. Direito do consumidor, família, desaposentação e sucessões.">
+<meta name="keywords" content=" advogados, advogados rio de janeiro, assessoria juridica, consultor juridico, ação indenizatória, processo por danos morais, orientação jurídica, direito de herança">
+<meta name="application-name" content="Teixeiraeadvogados.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="keywords" content="teixeiraeadvogados, advogado, advocacia" >
+<!-- CSS -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" media="only screen and (max-device-width: 1024px) and (min-device-width: 610px)" href="css/ipad.css" type="text/css" />
+
+<link rel="stylesheet" href="css/royalslider_home.css">
+<link rel="stylesheet" href="css/touchcarousel.css">
+
+<!-- JS -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/jquery.easing.1.3.min.js"></script>
+<script src="js/royal-slider-8.1.min.js"></script>
+<script src="js/jquery.touchcarousel-1.1.min.js"></script>
+
+<script src="libs/angular/angular.min.js"></script>
+<script type="text/javascript" src="js/website.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<?php include_once("analyticstracking.php") ?>
+</head>
+<body ng-controller="MainCtrl">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="loading">
+    <div class="complete-loader"><img src="img/ajax-loader.gif" /> <div class="logo-loader"></div></div>
+</div>
+<!-- HEADER -->
+<div class="container corpo">
+	<div class="header col-lg-12">
+		
+		<div class="row">
+			<div class="col-lg-6">
+				<a ng-click="setRoute('home')" class="home"><div class="logo"></div></a>
+			</div>
+			<div class="col-lg-6">
+				<form class="pull-right login-area form-inline" role="form">
+				  	<div class="form-group">
+				    	<label class="sr-only" for="exampleInputEmail2">Login</label>
+				    	<input type="email" class="form-control" id="exampleInputEmail2" placeholder="Login">
+				  	</div>
+				  	<div class="form-group">
+				    	<label class="sr-only" for="exampleInputPassword2">Senha</label>
+				    	<input type="password" class="form-control" id="exampleInputPassword2" placeholder="Senha">
+				  	</div>
+				  	<div class="checkbox">
+				    	<label>
+				      	<input type="checkbox"> Lembrar de mim
+				    	</label>
+				  	</div>
+				  <button ng-click="setRoute('login')" class="btn btn-default">Entrar</button>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-xm-12 menu">
+				<ul>
+					<li><a ng-click="setRoute('home')" class="home">HOME</a></li>
+					<li><a ng-click="setRoute('profile')"  class="office">QUEM SOMOS</a></li>
+					<li><a ng-click="setRoute('areas')"  class="practice-areas">RESERVE UMA VAGA AGORA!</a></li>
+					<li><a ng-click="setRoute('contact')"  class="contact">CONTATO</a></li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<div class="row"> 
+		<div ng-view></div>
+	</div>
+</div>
+<div class="container">
+	<div class="col-lg-7 col-md-12 tel corpo">
+		<span class="call-today pull-left">Em breve, versões para </span> <div class="android pull-left"></div> <div class="iphone pull-left"></div><br>
+	</div>
+</div>
+<script type="text/javascript" src="js/javascript.js"></script>
+
+</body>
+</html>

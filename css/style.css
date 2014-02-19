@@ -1,0 +1,118 @@
+body{margin-top:0;margin-left:0;margin-right:0;}
+body {background-image:url('../img/sprite.png');background-position:0px -1829px;height: 90px;font-size:15px;}
+.container{width:67%;padding-left:10px;padding-right:10px;margin-top:40px;}
+.corpo{background-color:#fff;border-radius:15px;box-shadow: 2px 2px 7px #333;}
+a{cursor:pointer;}
+.well{border-radius:15px;}
+.well-small{box-shadow: 2px 2px 7px #333;}
+label{font-size: 13px !important;}
+
+.success-message{color:#1a2f4d;font-size:20px;}
+iframe{height: 500px;margin-bottom:20px;border-radius:15px;cursor:pointer;}
+
+.loading { position:fixed; left:0; top:0; width:100%; height:100%;background-color:transparent;z-index:2;background-color:#fff;}
+.loading .complete-loader{margin-top: 15%;margin-left: 40%;}
+.loading img{margin-left: 180px;}
+.logo-loader{background-image:url('../img/sprite.png');background-position:0px -1110px;height: 100px;}
+
+/*HEADER*/
+.header .row:first-child{margin-top:5px;}
+
+/*Logo*/
+.logo{background-image:url('../img/sprite.png');background-position: 0px 0px;height: 100px;margin-top: 10px;}
+.park-logo{background-image:url('../img/sprite.png');background-position: 0px -178px;height: 70px;width: 360px;border:none;}
+/*Call today*/
+.tel .call-today,.facebook-like{color:#adbcd1;font-size:18px;}
+.tel .tel-number{color:#1a2f4d;font-size:20px;display:inline-block;}
+.tel{text-align:right;float:right;margin-bottom:10px;padding-top: 25px;}
+.call-today{margin-top:10px;}
+.ad{height: 100px;}
+.register{color:#1a2f4d;font-size:16px;margin-bottom:10px;font-weight: bold;}
+.especific-parking-label{color: #1a2f4d;font-size: 16px !important;font-weight:bold;}
+/*Menu*/
+.active a{color:#adbcd1;}
+ul li{text-decoration:none;display:inline-block;}
+li a{color:#007FFD;font-size:14px;margin-right:24px;font-weight: bold;}
+li:last-child a{margin-right:0;}
+li a:hover{text-decoration:none;}
+.menu{margin: 10px 0 0px;
+padding-top: 0px;
+border-radius: 15px;}
+ul{padding-left:0;margin-bottom:2px;}
+
+/*HOME*/
+/*Banner*/
+.banner{background-image:url('../img/sprite.png');background-position: 0px -757px;height:240px;display:none;}
+.login-area .form-control{width: 74%;height: 25px;}
+.search-div{text-align: center;}
+.search-label{color:#1a2f4d;font-size: 16px !important;
+}
+
+.android{background-image:url('../img/sprite.png');background-position: 0px -1784px;height:42px;width:60px;border:none;margin-left:20px;}
+.iphone{background-image:url('../img/sprite.png');background-position: 0px -1587px;height:70px;width:145px;border:none;}
+
+/*Areas*/
+.practice-area{color:#222;margin-bottom:0;}
+.area-examples{color:#adbcd1;font-size:16px;}
+.areas{margin-bottom:10px;cursor:pointer;padding:5px 0px 10px;}
+.area-click{cursor:pointer;padding:5px 30px 0px;}
+.areas:last-child{background-image:none;}
+.practice-area-preview{color:#444;padding:10px 0;}
+
+.audience-illustration{background-image:url('../img/sprite.png');background-position: -63px -3193px;}
+.retirement-illustration{background-image:url('../img/sprite.png');background-position: -66px -3644px;}
+.family-illustration{background-image:url('../img/sprite.png');background-position: -1px -2393px;}
+.criminal-illustration{background-image:url('../img/sprite.png');background-position: -66px -2828px;}
+.criminal-illustration,.family-illustration, .retirement-illustration, .audience-illustration{height:249px;border: 8px solid #fff;box-shadow: 1px 1px 3px #aaa;width: 232px;}
+
+a:hover{text-decoration:none;}
+
+/*AREAS SECTION*/
+.area-arrow{font-size:13px;}
+.panel-body{color:#666}
+
+/*PROFILE*/
+.attorney-picture{background-image:url('../img/sprite.png');background-position: -1px -1899px;height:300px;width: 372px;
+margin-bottom: 24px;border: 13px solid #fff;
+box-shadow: 1px 3px 7px #aaa;}
+.attorney-name{font-size:20px;}
+.attorney-profile{color:#666;margin:75px 0 10px;}
+
+/*FOOTER*/
+.logo-trasparent{opacity:0.75;background-image:url('../img/sprite.png');
+background-position: 0px 0px;height: 95px;width:305px;}
+.contact{margin:20px 0;}
+.copyright{color:#adbcd1;}
+.especialies{margin-top: 10px;}
+.footer{background-color:#fff;box-shadow: 1px -5px 5px #ddd;position:relative;width:100%;
+	left:0px;bottom:0px;color:#1a2f4d;font-size:14px;padding: 30px 0;}
+
+/*MEDIA QUERY*/
+
+@media (max-width: 1279px) { .areas{padding-left:0;background-image:none;} }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 979px) { 
+	.areas{padding-left:0;background-image:none;margin-bottom:10px;}
+	.container{width:100%;}
+	.address, .phones{margin-bottom:20px;}
+	.tel{float:left;}
+	li a{font-size:18px;font-weight:normal;}
+	li{margin-bottom:10px;}
+	.header .row:first-child{margin-top:10px;}
+ }
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { ul li{display:block;}
+	.menu{float:left!important;text-align:left;margin-top:0;}
+	.tel{float:left!important;text-align:left;
+	}
+ }
+
+/* Landscape phones and down */
+@media (max-width: 277px) {
+	.logo{background-position: 0px -1279px;
+	}
+	.menu{margin-top:0;}
+ }
+
